@@ -3,15 +3,15 @@ package com.bielinski.kwejk.model;
 public class Gif {
     private String name;
     private String username;
-    private boolean favourite;
+    private boolean favorite;
 
     public Gif(String name) {
         this.name = name;
     }
 
-    public Gif(String name, boolean favourite) {
+    public Gif(String name, boolean favorite) {
         this.name = name;
-        this.favourite = favourite;
+        this.favorite = favorite;
     }
 
     public String getName() {
@@ -30,12 +30,12 @@ public class Gif {
         this.username = username;
     }
 
-    public boolean isFavourite() {
-        return favourite;
+    public boolean isFavorite() {
+        return favorite;
     }
 
-    public void setFavourite(boolean favourite) {
-        this.favourite = favourite;
+    public void setFavorite(boolean favourite) {
+        this.favorite = favourite;
     }
 
     public String getThymeleafFilePatch() {
