@@ -9,6 +9,11 @@ public class Gif {
         this.name = name;
     }
 
+    public Gif(String name, boolean favourite) {
+        this.name = name;
+        this.favourite = favourite;
+    }
+
     public String getName() {
         return name;
     }
@@ -25,7 +30,7 @@ public class Gif {
         this.username = username;
     }
 
-    public boolean getFavourite() {
+    public boolean isFavourite() {
         return favourite;
     }
 
