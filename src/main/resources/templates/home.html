@@ -47,6 +47,8 @@
         <div class="row">
            <h1>Miejsce na wyświetlenie gifów:)</h1>
         </div>
+        <!--<img th:src="@{/gifs/compiler-bot.gif}"/>-->
+        <img th:src="${gif.getThymeleafFilePatch()}"/>
     </div>
 
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
