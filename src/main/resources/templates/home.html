@@ -44,18 +44,20 @@
         </div>
     </div>
 
-    <div class="gifs container">
-        <div class="row">
-            <!--<h1>Miejsce na gify xD</h1>-->
-            <!--<img th:src="@{/gifs/compiler-bot.gif}"/>-->
-            <!--<img th:src="${gif.getThymeleafFilePatch()}"/>-->
-            <div th:each="gif : ${gifs}" class="col s12 l4">
-                <div class="row col s12">
-                    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif" />
-                </div>
-            </div>
-        </div>
-    </div>
+<div th:replace="fragments/gifs :: gifs"/>
+
+    <!--<div class="gifs container">-->
+        <!--<div class="row">-->
+            <!--&lt;!&ndash;<h1>Miejsce na gify xD</h1>&ndash;&gt;-->
+            <!--&lt;!&ndash;<img th:src="@{/gifs/compiler-bot.gif}"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<img th:src="${gif.getThymeleafFilePatch()}"/>&ndash;&gt;-->
+            <!--<div th:each="gif : ${gifs}" class="col s12 l4">-->
+                <!--<div class="row col s12">-->
+                    <!--<img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif" />-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
