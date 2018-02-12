@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
 public class HomeController {
@@ -26,8 +29,19 @@ public class HomeController {
     }
 
     @GetMapping("/gif/{name}")
-    public String displayGif(@PathVariable String name, ModelMap modelMap){
-        modelMap.addAttribute("gif",gifRepository.findByName(name).orElse(new Gif("android-explosion", true)));
+    public String displayGif(@PathVariable String name, ModelMap modelMap) {
+        modelMap.addAttribute("gif", gifRepository.findByName(name).orElse(new Gif("android-explosion", true)));
         return "gif-details";
+    }
+
+    @GetMapping("/search")
+    public String searchGif(@RequestParam String q, ModelMap modelMap) {
+        List<Gif> gifList = gifRepository.findAllByNameIgnoreCase(q);
+        if (gifList.isEmpty()) {
+            modelMap.addAttribute("gifs", gifRepository.findAll());
+        } else {
+            modelMap.addAttribute("gifs", gifList);
+        }
+        return "home";
     }
 }

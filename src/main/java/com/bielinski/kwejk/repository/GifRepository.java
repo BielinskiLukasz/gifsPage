@@ -34,4 +34,8 @@ public class GifRepository {
     public static List<Gif> findByCategoryId(int categoryId) {
         return ALL_GIFS.stream().filter(p-> p.getCategoryId()==categoryId).collect(Collectors.toList());
     }
+
+    public List<Gif> findAllByNameIgnoreCase(String name){
+        return ALL_GIFS.stream().filter(p -> p.getName().toLowerCase().contains(name.toLowerCase())).collect(Collectors.toList());
+    }
 }
