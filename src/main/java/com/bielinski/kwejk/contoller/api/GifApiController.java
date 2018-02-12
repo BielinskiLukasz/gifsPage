@@ -1,4 +1,4 @@
-package com.bielinski.kwejk.contoller;
+package com.bielinski.kwejk.contoller.api;
 
 import com.bielinski.kwejk.model.Gif;
 import com.bielinski.kwejk.repository.GifRepository;
