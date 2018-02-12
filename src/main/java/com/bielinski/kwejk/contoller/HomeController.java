@@ -30,6 +30,4 @@ public class HomeController {
         modelMap.addAttribute("gif",gifRepository.findByName(name).orElse(new Gif("android-explosion", true)));
         return "gif-details";
     }
-
-
 }
