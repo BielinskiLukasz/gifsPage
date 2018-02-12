@@ -11,12 +11,12 @@ public class GifRepository {
     private static List<Gif> ALL_GIFS = new ArrayList<>();
 
     static {
-        ALL_GIFS.add(new Gif("android-explosion", true, 1));
-        ALL_GIFS.add(new Gif("ben-and-mike", false, 1));
-        ALL_GIFS.add(new Gif("book-dominos", false, 2));
-        ALL_GIFS.add(new Gif("compiler-bot", true, 2));
-        ALL_GIFS.add(new Gif("cowboy-coder", false, 3));
-        ALL_GIFS.add(new Gif("infinite-andrew", true, 3));
+        ALL_GIFS.add(new Gif("android-explosion", true, 1,"Rafal"));
+        ALL_GIFS.add(new Gif("ben-and-mike", false, 1, "Lukas"));
+        ALL_GIFS.add(new Gif("book-dominos", false, 2,"Bogdan"));
+        ALL_GIFS.add(new Gif("compiler-bot", true, 2,"Stefan"));
+        ALL_GIFS.add(new Gif("cowboy-coder", false, 3,"Lukas"));
+        ALL_GIFS.add(new Gif("infinite-andrew", true, 3,"Maciek"));
     }
 
     public List<Gif> findAll() {

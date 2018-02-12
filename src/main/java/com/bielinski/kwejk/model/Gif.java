@@ -20,6 +20,11 @@ public class Gif {
         this.categoryId = categoryId;
     }
 
+    public Gif(String name, boolean favorite, int categoryId, String username) {
+        this(name, favorite, categoryId);
+        this.username = username;
+    }
+
     public String getName() {
         return name;
     }
