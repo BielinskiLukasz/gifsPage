@@ -13,10 +13,10 @@ public class GifRepository {
     static {
         ALL_GIFS.add(new Gif("android-explosion", true, 1));
         ALL_GIFS.add(new Gif("ben-and-mike", false, 1));
-        ALL_GIFS.add(new Gif("book-dominos",false, 2));
-        ALL_GIFS.add(new Gif("compiler-bot", true,2));
-        ALL_GIFS.add(new Gif("cowboy-coder",false,3));
-        ALL_GIFS.add(new Gif("infinite-andrew", true,3));
+        ALL_GIFS.add(new Gif("book-dominos", false, 2));
+        ALL_GIFS.add(new Gif("compiler-bot", true, 2));
+        ALL_GIFS.add(new Gif("cowboy-coder", false, 3));
+        ALL_GIFS.add(new Gif("infinite-andrew", true, 3));
     }
 
     public List<Gif> findAll() {
@@ -27,15 +27,15 @@ public class GifRepository {
         return ALL_GIFS.stream().filter(p -> p.isFavorite()).collect(Collectors.toList());
     }
 
-    public Optional<Gif> findByName(String name){
-        return ALL_GIFS.stream().filter(p-> p.getName().equals(name)).findFirst();
+    public Optional<Gif> findByName(String name) {
+        return ALL_GIFS.stream().filter(p -> p.getName().equals(name)).findFirst();
     }
 
     public static List<Gif> findByCategoryId(int categoryId) {
-        return ALL_GIFS.stream().filter(p-> p.getCategoryId()==categoryId).collect(Collectors.toList());
+        return ALL_GIFS.stream().filter(p -> p.getCategoryId() == categoryId).collect(Collectors.toList());
     }
 
-    public List<Gif> findAllByNameIgnoreCase(String name){
+    public List<Gif> findAllByNameIgnoreCase(String name) {
         return ALL_GIFS.stream().filter(p -> p.getName().toLowerCase().contains(name.toLowerCase())).collect(Collectors.toList());
     }
 }

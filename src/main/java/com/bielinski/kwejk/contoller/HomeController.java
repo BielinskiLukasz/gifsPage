@@ -34,7 +34,7 @@ public class HomeController {
         return "gif-details";
     }
 
-    @GetMapping("/search")
+    @GetMapping("/gifs/search")
     public String searchGif(@RequestParam String q, ModelMap modelMap) {
         List<Gif> gifList = gifRepository.findAllByNameIgnoreCase(q);
         if (gifList.isEmpty()) {
