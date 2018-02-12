@@ -3,7 +3,6 @@ package com.bielinski.kwejk.contoller;
 import com.bielinski.kwejk.model.Gif;
 import com.bielinski.kwejk.repository.GifRepository;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

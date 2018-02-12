@@ -1,7 +1,6 @@
 package com.bielinski.kwejk.contoller;
 
 import com.bielinski.kwejk.model.Category;
-import com.bielinski.kwejk.model.Gif;
 import com.bielinski.kwejk.repository.CategoryRepository;
 import com.bielinski.kwejk.repository.GifRepository;
 import org.springframework.stereotype.Controller;
