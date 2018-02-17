@@ -13,12 +13,12 @@ public class GifApiController {
     private GifRepository gifRepository = new GifRepository();
 
     @GetMapping("/api/gifs")
-    public List<Gif> gifs(){
+    public List<Gif> gifs() {
         return gifRepository.findAll();
     }
 
     @GetMapping("/api/gifs/find")
-    public List<Gif> findGifs(@RequestParam String name){
+    public List<Gif> findGifs(@RequestParam String name) {
         return gifRepository.findAllByNameIgnoreCase(name);
     }
 }
