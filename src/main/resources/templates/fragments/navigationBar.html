@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+</head>
+<body>
+<div class="navbar-fixed" th:fragment="navigationBar">
+    <nav>
+        <div class="container">
+            <a th:href="@{/}" class="brand-logo">gif<span>.</span>bieluk<span>.</span>com</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a th:href="@{/}">Explore</a></li>
+                <li><a th:href="@{/categories}">Categories</a></li>
+                <li><a th:href="@{/favorites}">Favorites</a></li>
+            </ul>
+            <ul id="mobile-nav" class="side-nav">
+                <li><a th:href="@{/}">Explore</a></li>
+                <li><a th:href="@{/categories}">Categories</a></li>
+                <li><a th:href="@{/favorites}">Favorites</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+</body>
+</html>
