@@ -192,8 +192,8 @@ nav ul li.active, nav ul li:hover {
 }
 
 .card .card-title a {
-    color:#fff;
-    display:block;
+    color: #fff;
+    display: block;
     padding: 20px;
 }
 
@@ -269,14 +269,17 @@ nav ul li.active, nav ul li:hover {
     .gifs {
         padding: 0 1.5rem;
     }
+
     .gifs img {
         width: 100%;
     }
+
     .gif-detail .frame .col {
         padding: 0 1rem;
         background: none;
         border: none;
     }
+
     .gif-detail .col, .gif-detail .meta {
         margin-bottom: 0.1rem;
     }
@@ -288,6 +291,7 @@ nav ul li.active, nav ul li:hover {
     .gif-detail img {
         border-radius: 6px;
     }
+
     .gif-detail .favorite {
         right: 1rem;
     }

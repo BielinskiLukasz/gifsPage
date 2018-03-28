@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="icon" th:href="@{/favicon.png}" />
+    <link rel="icon" th:href="@{/favicon.png}"/>
 
-    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" th:href="@{/app.css}" />
+    <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" th:href="@{/app.css}"/>
 
     <title th:text="'gif.bieluk.com | ' + ${gif.name}">Kwejk</title>
 </head>
@@ -36,7 +36,8 @@
         <div class="col s12">
             <form action="#" method="get">
                 <div class="input-field">
-                    <input name="q" type="search" placeholder="Search all gifs..." required="required" autocomplete="off"/>
+                    <input name="q" type="search" placeholder="Search all gifs..." required="required"
+                           autocomplete="off"/>
                     <i class="material-icons">search</i>
                 </div>
             </form>
@@ -46,7 +47,7 @@
 <div class="gif-detail container">
     <div class="frame row">
         <div class="col s12">
-            <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif" />
+            <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif"/>
             <a href="#" th:class="(${gif.favorite} ? 'un' : '') + 'mark favorite'"></a>
         </div>
     </div>
@@ -54,7 +55,7 @@
         <div class="col s12 l6">
             <div class="meta row">
                 <div class="col s3">
-                    <img class="circle" src="http://api.adorable.io/avatars/205/avatar" alt="avatar" />
+                    <img class="circle" src="http://api.adorable.io/avatars/205/avatar" alt="avatar"/>
                 </div>
                 <div class="col s9">
                     <p th:text="${gif.username}"/>
