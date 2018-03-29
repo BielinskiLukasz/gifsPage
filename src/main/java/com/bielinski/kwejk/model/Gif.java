@@ -58,8 +58,9 @@ public class Gif {
     }
 
     public String getThymeleafFilePatch() {
-        String string = "/gifs/" + getName() + ".gif";
-        return string;
+        return "/gifs/" + getName() + ".gif";
     }
+
+    public void changeFavorite(){this.favorite = !this.favorite;}
 }
 

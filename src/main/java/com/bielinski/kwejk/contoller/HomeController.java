@@ -33,6 +33,13 @@ public class HomeController {
         return "gif-details";
     }
 
+    @GetMapping("/gif/{name}/favorite")
+    public String isFavouriteGifChange(@PathVariable String name, ModelMap modelMap) {
+        gifRepository.findByName(name).orElse(new Gif("android-explosion", true)).changeFavorite();
+        modelMap.addAttribute("gif", gifRepository.findByName(name).orElse(new Gif("android-explosion", true)));
+        return "gif-details";
+    }
+
     @GetMapping("/gifs/search")
     public String searchGif(@RequestParam String q, ModelMap modelMap) {
         List<Gif> gifList = gifRepository.findAllByNameIgnoreCase(q);
