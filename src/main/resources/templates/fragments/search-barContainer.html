@@ -8,11 +8,11 @@
 <div class="search-bar container" th:fragment="search-barContainer">
     <div class="row">
         <div class="col s12">
-            <form action="#" method="get">
+            <form action="/gifs/search" method="get">
                 <div class="input-field">
                     <input name="q" type="search" placeholder="Search all gifs..." required="required"
                            autocomplete="off"/>
-                    <i class="material-icons">search</i>
+                    <input class="material-icons" type="submit" value="search"/>
                 </div>
             </form>
         </div>

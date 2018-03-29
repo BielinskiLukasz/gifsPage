@@ -2425,6 +2425,7 @@ html input[type="button"], button, input[type="reset"], input[type="submit"] {
     /* 2 */
     cursor: pointer;
     /* 3 */
+    background-color: transparent;
 }
 
 /**
