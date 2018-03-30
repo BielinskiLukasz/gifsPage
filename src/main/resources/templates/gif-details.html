@@ -21,7 +21,8 @@
     <div class="frame row">
         <div class="col s12">
             <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif"/>
-            <a th:href="@{'/gif/' + ${gif.name} + '/favorite'}" th:class="(${gif.favorite} ? 'un' : '') + 'mark favorite'"></a>
+            <a th:href="@{'/gif/' + ${gif.name} + '/favorite'}"
+               th:class="(${gif.favorite} ? 'un' : '') + 'mark favorite'"></a>
         </div>
     </div>
     <div class="row">
@@ -37,8 +38,11 @@
         </div>
         <div class="col s12 l6">
             <div class="share">
-                <a class="btn right" href="#">Copy</a>
-                <span th:text="'http://gif.fy/' + ${gif.name}">URL</span>
+                <a class="btn right" onclick="copyLink();">Copy</a>
+                <span>
+                <input id="urlCopied" th:value="'https://bieluk-first-project.herokuapp.com/gif/' + ${gif.name}"
+                       readonly/>
+                </span>
             </div>
         </div>
     </div>
@@ -47,5 +51,12 @@
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
 <script th:src="@{/app.js}"></script>
+<script type="text/javascript">
+    function copyLink() {
+        var copyText = document.getElementById("urlCopied");
+        copyText.select();
+        document.execCommand("Copy");
+    }
+</script>
 </body>
 </html>
