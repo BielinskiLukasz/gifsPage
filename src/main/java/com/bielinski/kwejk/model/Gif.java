@@ -61,6 +61,8 @@ public class Gif {
         return "/gifs/" + getName() + ".gif";
     }
 
-    public void changeFavorite(){this.favorite = !this.favorite;}
+    public void changeFavorite() {
+        this.favorite = !this.favorite;
+    }
 }
 

@@ -101,6 +101,7 @@ nav ul li.active, nav ul li:hover {
 .container .row {
     margin-left: 0;
     margin-right: 0;
+    padding-right: 0;
 }
 
 .favorite {
@@ -272,6 +273,7 @@ nav ul li.active, nav ul li:hover {
 
     .gifs img {
         width: 100%;
+        height: 100%;
     }
 
     .gif-detail .frame .col {
