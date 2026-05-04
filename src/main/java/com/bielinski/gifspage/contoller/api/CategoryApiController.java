@@ -1,7 +1,7 @@
-package com.bielinski.kwejk.contoller.api;
+package com.bielinski.gifspage.contoller.api;
 
-import com.bielinski.kwejk.model.Category;
-import com.bielinski.kwejk.repository.CategoryRepository;
+import com.bielinski.gifspage.model.Category;
+import com.bielinski.gifspage.repository.CategoryRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

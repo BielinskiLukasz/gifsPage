@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.bielinski</groupId>
-	<artifactId>kwejk</artifactId>
+	<artifactId>gifs-page</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>kwejk</name>
+	<name>gifs-page</name>
 	<description>Next demo project for Spring Boot</description>
 
 	<parent>

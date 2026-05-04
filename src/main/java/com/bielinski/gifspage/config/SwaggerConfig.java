@@ -1,4 +1,4 @@
-package com.bielinski.kwejk.config;
+package com.bielinski.gifspage.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

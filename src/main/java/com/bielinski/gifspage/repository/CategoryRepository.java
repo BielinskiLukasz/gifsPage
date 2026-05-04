@@ -1,6 +1,6 @@
-package com.bielinski.kwejk.repository;
+package com.bielinski.gifspage.repository;
 
-import com.bielinski.kwejk.model.Category;
+import com.bielinski.gifspage.model.Category;
 
 import java.util.ArrayList;
 import java.util.List;

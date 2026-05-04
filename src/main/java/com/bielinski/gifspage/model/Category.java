@@ -1,4 +1,4 @@
-package com.bielinski.kwejk.model;
+package com.bielinski.gifspage.model;
 
 public class Category {
     private Long id;

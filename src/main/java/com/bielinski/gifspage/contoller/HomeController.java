@@ -1,7 +1,7 @@
-package com.bielinski.kwejk.contoller;
+package com.bielinski.gifspage.contoller;
 
-import com.bielinski.kwejk.model.Gif;
-import com.bielinski.kwejk.repository.GifRepository;
+import com.bielinski.gifspage.model.Gif;
+import com.bielinski.gifspage.repository.GifRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
