@@ -2,8 +2,8 @@
 
 ![Status](https://img.shields.io/badge/status-finished-brightgreen)
 ![Version](https://img.shields.io/badge/version-0.0.1--SNAPSHOT-blue)
-![Java](https://img.shields.io/badge/Java-8-orange?logo=openjdk)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.0.0-success?logo=springboot)
+![Java](https://img.shields.io/badge/Java-26-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-success?logo=springboot)
 ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0-005F0F?logo=thymeleaf)
 ![Swagger](https://img.shields.io/badge/Swagger-2.9.2-brightgreen?logo=swagger)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
@@ -21,7 +21,7 @@ Provides a simple UI built with **Thymeleaf** and exposes a small **REST API** f
 - **View favorite GIFs**
 - **Browse GIFs by category**
 - **REST API** for GIFs and categories
-- **Swagger UI** (Springfox 2.9.2)
+- **Swagger UI**
 
 ---
 
@@ -147,11 +147,10 @@ All data is stored **in memory** using static lists in repositories.
 
 ## 🧰 Technologies Used
 
-- **Java 8**
-- **Spring Boot 2**
+- **Java 26**
+- **Spring Boot 4**
 - **Spring MVC**
 - **Thymeleaf**
-- **Springfox Swagger 2.9.2**
 - **Materialize CSS**
 - **jQuery**
 - **Maven**
