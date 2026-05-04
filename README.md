@@ -83,15 +83,19 @@ src/main/resources/static
 ## 🔌 REST API
 
 ### 📍 **GET /api/gifs**
+
 Returns all GIFs.
 
 ### 📍 **GET /api/gifs/find?name=...**
+
 Search GIFs by name (case‑insensitive).
 
 ### 📍 **GET /api/categories**
+
 Returns all categories.
 
 ### 📍 **GET /api/categories/find?name=...**
+
 Search categories by name.  
 If no results → returns all categories.
 
@@ -100,27 +104,35 @@ If no results → returns all categories.
 ## 🌐 MVC Endpoints (Thymeleaf)
 
 ### `/`
+
 Home page — displays all GIFs.
 
 ### `/favorites`
+
 Displays only favorite GIFs.
 
 ### `/gif/{name}`
+
 GIF details page.
 
 ### `/gif/{name}/favorite`
+
 Toggles favorite status.
 
 ### `/gifs/search?q=...`
+
 Search GIFs by name.
 
 ### `/categories`
+
 List all categories.
 
 ### `/category/{id}`
+
 Display category + GIFs belonging to it.
 
 ### `/categories/search?q=...`
+
 Search categories by name.
 
 ---
@@ -128,6 +140,7 @@ Search categories by name.
 ## 🧠 Data Model
 
 ### **Gif**
+
 ```java
 String name;
 String username;
@@ -136,6 +149,7 @@ int categoryId;
 ```
 
 ### **Category**
+
 ```java
 Long id;
 String name;
@@ -160,10 +174,12 @@ All data is stored **in memory** using static lists in repositories.
 ## 🚀 Running the Application
 
 ### Prerequisites
+
 - Java 8+
 - Maven 3.8+
 
 ### Build & Run
+
 ```bash
 mvn clean package
 mvn spring-boot:run

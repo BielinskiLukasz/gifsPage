@@ -7,10 +7,10 @@
 <body>
 <div class="gifs container" th:fragment="gifs">
     <div class="row">
-        <div th:each="gif : ${gifs}" class="col s12 l4">
+        <div class="col s12 l4" th:each="gif : ${gifs}">
             <div class="row col s12">
                 <a th:href="@{'/gif/' + ${gif.name}}">
-                    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="gif"/>
+                    <img alt="gif" th:src="@{'/gifs/' + ${gif.name} + '.gif'}"/>
                 </a>
             </div>
         </div>

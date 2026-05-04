@@ -19,6 +19,10 @@ public class GifRepository {
         ALL_GIFS.add(new Gif("infinite-andrew", true, 3, "Maciek"));
     }
 
+    public static List<Gif> findByCategoryId(int categoryId) {
+        return ALL_GIFS.stream().filter(p -> p.getCategoryId() == categoryId).collect(Collectors.toList());
+    }
+
     public List<Gif> findAll() {
         return ALL_GIFS;
     }
@@ -29,10 +33,6 @@ public class GifRepository {
 
     public Optional<Gif> findByName(String name) {
         return ALL_GIFS.stream().filter(p -> p.getName().equals(name)).findFirst();
-    }
-
-    public static List<Gif> findByCategoryId(int categoryId) {
-        return ALL_GIFS.stream().filter(p -> p.getCategoryId() == categoryId).collect(Collectors.toList());
     }
 
     public List<Gif> findAllByNameIgnoreCase(String name) {
